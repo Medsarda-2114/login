@@ -14,11 +14,23 @@ function App() {
   return (
     <div className="App">
       <div className="loginContainer">
-        <img
-          className={`overLay ${slideContainer}`}
-          src="https://st.depositphotos.com/18722762/51522/v/600/depositphotos_515228814-stock-illustration-online-registration-sign-login-account.jpg"
-          alt=""
-        />
+        {slideContainer ? (
+          <div className={`overLay ${slideContainer}`}>
+            <h2>Hello, Friend</h2>
+            <p>
+              Enter You Personal Details And Start <br />
+              Journey With Us
+            </p>
+          </div>
+        ) : (
+          <div className={`overLay ${slideContainer}`}>
+            <h2>Welcome Back</h2>
+            <p>
+              To Keep Connected With Us Please Login <br /> With Your Personal
+              Info .
+            </p>
+          </div>
+        )}
         <SignIn slideContainerNotActive={slideContainerNotActive} />
         <SignUp slideContainerActive={slideContainerActive} />
       </div>
