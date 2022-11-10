@@ -20,6 +20,7 @@ const SignIn = ({ slideContainerNotActive }) => {
       toast.error("Please Enter Your Info");
     } else {
       toast.success("Sign In");
+      console.log(user);
     }
   };
   return (

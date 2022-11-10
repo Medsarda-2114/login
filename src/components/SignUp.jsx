@@ -15,6 +15,7 @@ const SignUp = ({ slideContainerActive }) => {
       toast.error("Please Enter Your Info");
     } else {
       toast.success("Sign Up");
+      console.log(user);
     }
   };
   return (
