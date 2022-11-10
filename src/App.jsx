@@ -2,9 +2,11 @@ import { useState } from "react";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import "./scss/index.scss";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
-  const [slideContainer, setSlideContainer] = useState("");
+  const [slideContainer, setSlideContainer] = useState("active");
   const slideContainerActive = () => {
     setSlideContainer("active");
   };
@@ -13,6 +15,7 @@ function App() {
   };
   return (
     <div className="App">
+      <ToastContainer />
       <div className="loginContainer">
         {slideContainer ? (
           <div className={`overLay ${slideContainer}`}>
