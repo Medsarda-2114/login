@@ -66,3 +66,41 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  .App {
+    .loginContainer {
+      .overLay {
+        h2 {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .signInContainer,
+  .signUpContainer {
+    h2 {
+      font-size: 2rem;
+    }
+    form {
+      .row {
+        width: 250px;
+      }
+      button {
+        padding: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    }
+    .msg {
+      font-size: 10px;
+      button {
+        padding: 5px;
+        font-size: 10px;
+      }
+    }
+  }
+}
